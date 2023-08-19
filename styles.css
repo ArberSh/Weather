@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+section{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.weather-wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin:10rem auto ;
+    width: 30rem;
+    background:  linear-gradient(rgb(0, 141, 241),rgb(4, 255, 230));
+    border-radius: 1.5rem;
+}
+.searchBar{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.searchBar input{
+    width: 14rem;
+    height: 2rem;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    border:none;
+    font-size: 15px;
+    padding-left:0.2rem;
+}
+.searchBar img{
+    height: 1.4rem;
+    width: 1.4rem;
+}
+.searchBar button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0 8px 8px 0;
+    background-color: white;
+    border:none;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.Main-Result{
+    margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Main-Result h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing:1px;
+    font-size: 28px;
+    text-align: center;
+}
+.Main-Result img{
+    width: 12rem;
+}
+
+.Main-Result h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing:1px;
+    text-align: center;
+    font-size: 42px;
+}
+.Temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.high-Temp{
+    display: flex;
+    flex-direction: row;
+}
+.high-Temp h1{
+    font-size: 28px;
+    color: white;
+}
+.low-Temp{
+    display: flex;
+    flex-direction: row;
+}
+.low-Temp h1{
+    font-size: 28px;
+    color: white;
+}
+.Temp img{
+    width: 2rem;
+}
+.Wind-Humidity{
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+}
+.Wind{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Wind h1{
+    margin-left: 0.6rem;
+    font-size: 28px;
+    color: white;
+}
+.Humidity{
+    display: flex;
+    flex-direction: row;
+}
+.Humidity h1{
+    margin-left: 0.6rem;
+    font-size: 28px;
+    color: white;
+}
+.Wind-Humidity img{
+    width: 3rem;
+}

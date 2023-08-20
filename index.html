@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="icon" href="./photos/clear.png">
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- fonts  -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- fonts -->
-</head>
-<body>
+  </head>
+  <body>
     <section class="weather">
-        <div class="weather-wrapper">
-            <div class="searchBar">
-                <input class="city" type="text" placeholder="Name a city">
-                <button onclick="Weather()"><img src="./photos/search.png" alt=""></button>
-            </div>
-            <div class="Result">
-                <div class="Main-Result">
-                 <h1 class="CityName"></h1>
-                 <img src="./photos/clear.png" alt="">
-                  <h2 class="Temperature"></h2>
-                </div>
-                <div class="Temp">
-                    <div class="high-Temp">
-                      <h1 class="HighTemp"></h1>
-                      <img src="./photos/TempMax.png" alt="">  
-                    </div>
-                    <div class="low-Temp">
-                        <h1 class="LowTemp"></h1>
-                        <img src="./photos/TempMin.png" alt="">
-                    </div>
-                </div>
-                <div class="Wind-Humidity">
-                    <div class="Wind">
-                        <img src="./photos/wind.png" alt="">  
-                        <h1 class="M-Wind"></h1>
-                      </div>
-                      <div class="Humidity">
-                        <img src="./photos/humidity.png" alt="">  
-                        <h1 class="M-Humidity"></h1>
-                      </div>
-                </div>
-            </div>
+      <div class="weather-wrapper">
+        <div class="searchBar">
+          <input class="city" type="text" placeholder="Name a city" />
+          <button onclick="Weather()">
+            <img src="./photos/search.png" alt="" />
+          </button>
         </div>
+        <h1 class="Message">Please Name a City</h1>
+        <div class="Result">
+          <div class="Main-Result">
+            <h1 class="CityName"></h1>
+            <img class="ImgWeather" src="./photos/clear.png" />
+            <h2 class="Temperature"></h2>
+          </div>
+          <div class="Temp">
+            <div class="high-Temp">
+              <h1 class="HighTemp"></h1>
+              <img src="./photos/TempMax.png" alt="" />
+            </div>
+            <div class="low-Temp">
+              <h1 class="LowTemp"></h1>
+              <img src="./photos/TempMin.png" alt="" />
+            </div>
+          </div>
+          <div class="Wind-Humidity">
+            <div class="Wind">
+              <img src="./photos/wind.png" alt="" />
+              <div class="WindText">
+                <h1 class="M-Wind"></h1>
+                <h2>Wind Speed</h2>
+              </div>
+            </div>
+            <div class="Humidity">
+              <img src="./photos/humidity.png" alt="" />
+              <div class="HumidityText">
+              <h1 class="M-Humidity"></h1>
+              <h2>Humidity</h2>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

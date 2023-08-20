@@ -17,12 +17,12 @@ section{
     justify-content: center;
     flex-direction: column;
     margin:10rem auto ;
-    width: 30rem;
+    width: 25rem;
     background:  linear-gradient(rgb(0, 141, 241),rgb(4, 255, 230));
     border-radius: 1.5rem;
+    padding: 2rem;
 }
 .searchBar{
-    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     border: 1px solid black;
@@ -39,8 +39,8 @@ section{
     padding-left:0.2rem;
 }
 .searchBar img{
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 1.2rem;
+    width: 1.2rem;
 }
 .searchBar button{
     height: 2rem;
@@ -51,6 +51,16 @@ section{
     padding: 0.2rem;
     cursor: pointer;
 }
+.Message{
+    display: none;
+    color: white;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.Result{
+    display: none;
+}
+
 .Main-Result{
     margin-top: 0.4rem;
     display: flex;
@@ -105,7 +115,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8rem;
+    gap: 2rem;
 }
 .Wind{
     display: flex;
@@ -113,19 +123,35 @@ section{
     justify-content: center;
     align-items: center;
 }
+.WindText{
+    display: flex;
+    flex-direction: column;
+}
+
 .Wind h1{
-    margin-left: 0.6rem;
-    font-size: 28px;
+    font-size: 21px;
     color: white;
+    text-align: center;
+}
+.Wind h2{
+    font-size: 14px;
+    color: white;
+    margin-left: 0.4rem;
+    font-weight: light;
 }
 .Humidity{
     display: flex;
     flex-direction: row;
 }
 .Humidity h1{
-    margin-left: 0.6rem;
-    font-size: 28px;
+    margin-left: 1.6rem;
+    font-size: 24px;
     color: white;
+}
+.HumidityText h2{
+    font-size: 16px;
+    color: white;
+    margin-left: 0.4rem;
 }
 .Wind-Humidity img{
     width: 3rem;
